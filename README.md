@@ -1,5 +1,7 @@
 # rebornos-os-release
 
+**v20211018-2**
+
 How to clone this repo:
 
 ```
