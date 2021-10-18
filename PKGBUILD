@@ -4,7 +4,7 @@
 pkgname=rebornos-os-release
 fname=os-release
 pkgver=20211018
-pkgrel=2
+pkgrel=3
 pkgdesc="RebornOS os-release file info"
 arch=('any')
 url="https://gitlab.com/rebornos-team/rebornos-special-system-files/rebornosos-release"
