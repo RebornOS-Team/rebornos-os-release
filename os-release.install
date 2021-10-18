@@ -1,21 +1,13 @@
 post_install() {
-sed -i 's/NAME="Arch Linux"/NAME="RebornOS Linux"/g' /usr/lib/os-release
-sed -i 's/ID=arch/ID=RebornOS/g' /usr/lib/os-release
-sed -i 's/ID=rebornos/ID=RebornOS/g' /usr/lib/os-release
-sed -i 's#https://archlinux.org#https://rebornos.org#g' /usr/lib/os-release
-sed -i 's#https://wiki.archlinux.org#https://osdn.net/projects/rebornos/wiki/TitleIndex#g' /usr/lib/os-release
-sed -i 's#https://bbs.archlinux.org#https://discord.com/channels/805020018537660416/805020018848169987#g' /usr/lib/os-release
-sed -i 's#https://bugs.archlinux.org#https://discord.com/channels/805020018537660416/805020018848169992#g' /usr/lib/os-release
-sed -i 's#LOGO=archlinux#LOGO=rebornos#g' /usr/lib/os-release
+rm /usr/lib/os-release
+cp /usr/lib/os-release-new /usr/lib/os-release
+rm /usr/lib/os-release-new
+chmod 644 /usr/lib/os-release-new
 }
 
 post_upgrade() {
-sed -i 's/NAME="Arch Linux"/NAME="RebornOS Linux"/g' /usr/lib/os-release
-sed -i 's/ID=arch/ID=RebornOS/g' /usr/lib/os-release
-sed -i 's/ID=rebornos/ID=RebornOS/g' /usr/lib/os-release
-sed -i 's#https://archlinux.org#https://rebornos.org#g' /usr/lib/os-release
-sed -i 's#https://wiki.archlinux.org#https://osdn.net/projects/rebornos/wiki/TitleIndex#g' /usr/lib/os-release
-sed -i 's#https://bbs.archlinux.org#https://discord.com/channels/805020018537660416/805020018848169987#g' /usr/lib/os-release
-sed -i 's#https://bugs.archlinux.org#https://discord.com/channels/805020018537660416/805020018848169992#g' /usr/lib/os-release
-sed -i 's#LOGO=archlinux#LOGO=rebornos#g' /usr/lib/os-release
+rm /usr/lib/os-release
+cp /usr/lib/os-release-new /usr/lib/os-release
+rm /usr/lib/os-release-new
+chmod 644 /usr/lib/os-release-new
 }

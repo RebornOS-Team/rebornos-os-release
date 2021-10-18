@@ -2,17 +2,17 @@
 # Maintainer: Rafael from RebornOS <rafael@rebornos.org>
 
 pkgname=rebornos-os-release
-_pkgname=os-release
-pkgver=20210610
-pkgrel=7
+fname=os-release
+pkgver=20211018
+pkgrel=2
 pkgdesc="RebornOS os-release file info"
 arch=('any')
-url="https://github.com/RebornOS-Developers/rebornos-os-release"
+url="https://gitlab.com/rebornos-team/rebornos-special-system-files/rebornosos-release"
 license=('GPL3')
 backup=(usr/lib/os-release)
 source=('os-release')
-sha256sums=('86a81a2e3278dcabe58f7a6a94c0475f261033668ee571883f11257b47ef7c5c')
-install=${_pkgname}.install
+sha256sums=('98c420b4bd3ec1421834eda4625902a79b454e0e268e0e8e29612e9518199d7a')
+install=${fname}.install
 
 pkgver() {
     date +%Y%m%d
@@ -20,5 +20,5 @@ pkgver() {
 
 package() {
     mkdir -p ${pkgdir}/usr/lib/
-    install -m644 ${srcdir}/${_pkgname} ${pkgdir}/usr/lib/${_pkgname}-new
+    install -m644 ${srcdir}/${fname} ${pkgdir}/usr/lib/${fname}-new
 }
