@@ -1,6 +1,5 @@
-# rebornos-os-release
+# RebornOS os-release updater
 
-**v20211018-3**
 
 How to clone this repo:
 

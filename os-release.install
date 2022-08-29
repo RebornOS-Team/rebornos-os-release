@@ -1,8 +1,5 @@
 post_install() {
-rm /usr/lib/os-release
-cp /usr/lib/os-release-new /usr/lib/os-release
-rm /usr/lib/os-release-new
-chmod 644 /usr/lib/os-release
+post_upgrade
 }
 
 post_upgrade() {

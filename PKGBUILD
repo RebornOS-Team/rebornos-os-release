@@ -3,15 +3,15 @@
 
 pkgname=rebornos-os-release
 fname=os-release
-pkgver=20211018
-pkgrel=3
+pkgver=20220622
+pkgrel=1
 pkgdesc="RebornOS os-release file info"
 arch=('any')
 url="https://gitlab.com/rebornos-team/rebornos-special-system-files/rebornosos-release"
 license=('GPL3')
 backup=(usr/lib/os-release)
 source=('os-release')
-sha256sums=('98c420b4bd3ec1421834eda4625902a79b454e0e268e0e8e29612e9518199d7a')
+sha256sums=('3ab937d2ffd0a8390eec5ba958ab0de0c7b47b9742e246a72f6f289607dd719a')
 install=${fname}.install
 
 pkgver() {
